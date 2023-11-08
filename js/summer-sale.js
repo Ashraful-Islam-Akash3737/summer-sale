@@ -101,3 +101,23 @@ document.getElementById('furniture-item3').addEventListener('click', function(){
     setElementInnerText('total-price', totalPrice3);
     AddCalculateItem ("add-item", "Flexible Sofa");
 })
+
+
+
+
+document.getElementById('make-purchase').addEventListener('click', function(){
+    const totalPrice = getInputId("total-price");
+    const discount = getInputId("discount");
+    const total = getInputId("total");
+    if(totalPrice >= 200){
+        const  discount = (totalPrice * (10/100));
+        const total = totalPrice - discount;
+        setElementInnerText("discount", discount);
+        setElementInnerText("total", total);
+        
+    }
+    else{
+        setElementInnerText("total", totalPrice);
+        return discount;
+    }
+})
