@@ -217,12 +217,12 @@
                 <h3 class="mb-4 font-medium text-2xl">Have a coupon?</h3>
                 <div class="flex justify-center">
                     <input id="coupon-code" type="text" class="border pl-2 h-14 rounded-l-lg w-3/4  text-2xl" name="" placeholder="Coupon number">
-                    <button id="coupon-button" class="btn btn-secondary rounded-none rounded-r-lg h-14" >Apply</button>
+                    <button id="coupon-button" class="btn btn-secondary rounded-none rounded-r-lg h-14" disabled>Apply</button>
                 </div>
             </div>
             <!-- purchase section -->
             <div class="mb-5">
-                <div id="add-item" class="count-container mb-5 text-start text-xl">
+                <div id="add-item" class="count-container mb-5 text-start text-2xl font-medium">
 
                 </div>
                 <hr>
@@ -236,7 +236,7 @@
 
                 </div>
                 <hr>
-                <button id="make-purchase" class="btn btn-secondary rounded-lg mt-5 text-2xl text-center capitalize h-7">Make
+                <button id="make-purchase"  class="btn btn-secondary rounded-lg mt-5 text-2xl text-center capitalize h-7" disabled>Make
                     Purchase</button>
             </div>
         </div>
@@ -247,6 +247,8 @@
 
     </footer>
 
+
+    <script src="js/utility.js"></script>
     <script src="js/summer-sale.js"></script>
 </body>
 
