@@ -1,7 +1,7 @@
 function getTextId(textId){
     const inputText = document.getElementById(textId);
-    const inputTextString = inputText.vlaue;
-    const input = parseFloat(inputTextString);
+    const input = inputText.value;
+    // const input = parseFloat(inputTextString);
     return input;
 }
 // 
@@ -110,7 +110,7 @@ document.getElementById('make-purchase').addEventListener('click', function(){
     const discount = getInputId("discount");
     const total = getInputId("total");
     if(totalPrice >= 200){
-        const  discount = (totalPrice * (10/100));
+        const  discount = (totalPrice * (20/100)).toFixed(2);
         const total = totalPrice - discount;
         setElementInnerText("discount", discount);
         setElementInnerText("total", total);
@@ -121,3 +121,25 @@ document.getElementById('make-purchase').addEventListener('click', function(){
         return discount;
     }
 })
+
+
+
+document.getElementById('coupon-button').addEventListener('click', function(){
+    const couponCode = getTextId("coupon-code");
+    console.log(couponCode);
+
+    const couponButton = getInputId("coupon-button");
+    const totalPrice = getInputId("total-price");
+    const discount = getInputId("discount");
+    const total = getInputId("total");
+    if(couponCode === "SELL200"){
+        const  discount = (totalPrice * (20/100)).toFixed(2);
+        const total = totalPrice - discount;
+        setElementInnerText("discount", discount);
+        setElementInnerText("total", total);
+    }
+    else{
+        setElementInnerText("total", totalPrice);
+        
+    }
+});
