@@ -6,6 +6,10 @@ document.getElementById('kitchenware-item1').addEventListener('click', function 
     const total1 = getInputId('total-price');
     const totalPrice1 = total1 + price1;
 
+    const totalPrice = getInputId("total-price");
+    const total = totalPrice + price1;
+    setElementInnerText("total", total);
+
     setElementInnerText('total-price', totalPrice1);
     AddCalculateItem("add-item", "K. Accessories");
     attribute();
@@ -18,6 +22,10 @@ document.getElementById('kitchenware-item2').addEventListener('click', function 
     const total2 = getInputId('total-price');
     const totalPrice2 = total2 + price2;
 
+    const totalPrice = getInputId("total-price");
+    const total = totalPrice + price2;
+    setElementInnerText("total", total);
+
     setElementInnerText('total-price', totalPrice2);
     AddCalculateItem("add-item", "K. Accessories");
     attribute();
@@ -28,6 +36,10 @@ document.getElementById('kitchenware-item3').addEventListener('click', function 
     const price3 = getInputId('kitchenware-price3');
     const total3 = getInputId('total-price');
     const totalPrice3 = total3 + price3;
+
+    const totalPrice = getInputId("total-price");
+    const total = totalPrice + price3;
+    setElementInnerText("total", total);
 
     setElementInnerText('total-price', totalPrice3);
     AddCalculateItem("add-item", "K. Accessories");
@@ -43,6 +55,10 @@ document.getElementById('sportswear-item1').addEventListener('click', function (
     const total1 = getInputId('total-price');
     const totalPrice1 = total1 + price1;
 
+    const totalPrice = getInputId("total-price");
+    const total = totalPrice + price1;
+    setElementInnerText("total", total);
+
     setElementInnerText('total-price', totalPrice1);
     AddCalculateItem("add-item", "Sports Back Cap");
     attribute();
@@ -54,6 +70,10 @@ document.getElementById('sportswear-item2').addEventListener('click', function (
     const total2 = getInputId('total-price');
     const totalPrice2 = total2 + price2;
 
+    const totalPrice = getInputId("total-price");
+    const total = totalPrice + price2;
+    setElementInnerText("total", total);
+
     setElementInnerText('total-price', totalPrice2);
     AddCalculateItem("add-item", "Full Jersey Set");
     attribute();
@@ -64,6 +84,10 @@ document.getElementById('sportswear-item3').addEventListener('click', function (
     const price3 = getInputId('sportswear-price3');
     const total3 = getInputId('total-price');
     const totalPrice3 = total3 + price3;
+
+    const totalPrice = getInputId("total-price");
+    const total = totalPrice + price3;
+    setElementInnerText("total", total);
 
     setElementInnerText('total-price', totalPrice3);
     AddCalculateItem("add-item", "Sports cates");
@@ -80,6 +104,10 @@ document.getElementById('furniture-item1').addEventListener('click', function ()
     const total1 = getInputId('total-price');
     const totalPrice1 = total1 + price1;
 
+    const totalPrice = getInputId("total-price");
+    const total = totalPrice + price1;
+    setElementInnerText("total", total);
+
     setElementInnerText('total-price', totalPrice1);
     AddCalculateItem("add-item", "Single Relax Chair");
     attribute();
@@ -91,6 +119,10 @@ document.getElementById('furniture-item2').addEventListener('click', function ()
     const total2 = getInputId('total-price');
     const totalPrice2 = total2 + price2;
 
+    const totalPrice = getInputId("total-price");
+    const total = totalPrice + price2;
+    setElementInnerText("total", total);
+
     setElementInnerText('total-price', totalPrice2);
     AddCalculateItem("add-item", "Children play");
     attribute();
@@ -101,6 +133,10 @@ document.getElementById('furniture-item3').addEventListener('click', function ()
     const price3 = getInputId('furniture-price3');
     const total3 = getInputId('total-price');
     const totalPrice3 = total3 + price3;
+
+    const totalPrice = getInputId("total-price");
+    const total = totalPrice + price3;
+    setElementInnerText("total", total);
 
     setElementInnerText('total-price', totalPrice3);
     AddCalculateItem("add-item", "Flexible Sofa");
@@ -118,18 +154,22 @@ document.getElementById('make-purchase').addEventListener('click', function () {
     const discount = getInputId("discount");
     const total = getInputId("total");
     
-    if (totalPrice > 0) {
 
-        setElementInnerText("discount", discount);
-        setElementInnerText("total", totalPrice);
-    }
+    setElementInnerText("total", "0");
+    setElementInnerText("discount", "0");
+    setElementInnerText("total-price", "0");
+    // if (totalPrice > 0) {
 
-    else{
+    //     setElementInnerText("discount", discount);
+    //     setElementInnerText("total", totalPrice);
+    // }
+
+    // else{
         
-        return;
-    }
+    //     return;
+    // }
 
-
+    
 })
 
 
