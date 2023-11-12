@@ -158,6 +158,9 @@ document.getElementById('make-purchase').addEventListener('click', function () {
     setElementInnerText("total", "0");
     setElementInnerText("discount", "0");
     setElementInnerText("total-price", "0");
+
+    const addItem = getInputId("add-item");
+    setElementInnerText("add-item", "");
     // if (totalPrice > 0) {
 
     //     setElementInnerText("discount", discount);
